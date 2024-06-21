@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+/out/
+
+# production
+/build
+
+# local env files
+.env*.local
+
+# build dist
+dist

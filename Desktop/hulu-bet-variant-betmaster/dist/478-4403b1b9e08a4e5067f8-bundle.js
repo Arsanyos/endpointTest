@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconvexit_variant=self.webpackChunkconvexit_variant||[]).push([[478],{27478:(e,n,a)=>{a.r(n),a.d(n,{default:()=>c});var t=a(35466);function c(){return t.createElement("div",null,"Balance")}}}]);

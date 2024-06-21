@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff" />
+
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="shortcut icon" href="./logo.png" />
+    <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/%REACT_APP_FAVICON%" /> -->
+
+    <!-- Telegram WebApp script -->
+    <script
+      src="https://telegram.org/js/telegram-web-app.js"
+      strategy="beforeInteractive"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=<%= process.env.REACT_GOOGLE_TRACKING_ID %>"
+    ></script>
+    <script>
+      let GA_KEY = '<%= process.env.REACT_GOOGLE_TRACKING_ID %>';
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', GA_KEY);
+    </script>
+
+    <!-- <script>
+      const getFaviconEl = () => {
+        return document.getElementById('favicon');
+      };
+      const getFaviconByEnv = (env) => {
+        console.log(env);
+        const favicon = getFaviconEl();
+        return (favicon.href = '%PUBLIC_URL%/' + env);
+      };
+      getFaviconByEnv('%REACT_APP_LOADING_LOGO%');
+    </script> -->
+
+    <!-- Hotjar Tracking Code for my site -->
+    <!-- <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3448187, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script> -->
+
+    <title><%= process.env.REACT_APP_TITLE %></title>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        let TAWK_KEY = '<%= process.env.REACT_APP_TAWK_ID %>';
+        const urlParams = new URLSearchParams(window.location.search);
+        const uimode = urlParams.get('mode');
+        if (!TAWK_KEY || uimode === 'cashier') {
+          return;
+        }
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0];
+        s1.async = true;
+        // s1.src = `https://embed.tawk.to/${'<%= process.env.REACT_APP_TAWK_ID %>'}`;
+        s1.src = `https://embed.tawk.to/${TAWK_KEY}`;
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

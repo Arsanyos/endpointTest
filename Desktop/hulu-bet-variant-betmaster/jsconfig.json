@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    // "target": "es2017",
+    "baseUrl": "./",
+    "jsx": "react",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@Layout/*": ["src/Layout/*"],
+      "@pages/*": ["src/pages/*"],
+      "@services/*": ["src/services/*"],
+      "@assets/*": ["src/assets/*"],
+      "@styles/*": ["src/styles/*"],
+      "@ReduxStore/*": ["src/store/*"]
+    }
+  },
+  // "include": ["src"],
+  "exclude": ["dist", "public", "node_modules"]
+}

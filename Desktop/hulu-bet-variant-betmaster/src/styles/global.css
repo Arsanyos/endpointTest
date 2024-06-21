@@ -1,0 +1,117 @@
+@tailwind base;
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--secondary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--secondary);
+  border-radius: 100vh;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 100vh;
+  /* border: 3px solid var(--primary); */
+}
+
+@media (max-width: 768px) {
+  * {
+    scrollbar-width: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  --mobile-height: 64px;
+  --primary: #f8dc1c;
+  --active: #f8dc1c;
+  --light: #9ab7c6;
+  --white: #ffffff;
+  --secondary: #262626;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    /* background: #343c40; */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 100vh;
+    /* // border: 2px solid #f6f7ed; */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+
+  .slipCard:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .slipCard:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .spin-button-none::-webkit-inner-spin-button,
+  .spin-button-none::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-visible::-webkit-scrollbar {
+    display: block;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .scrollbar-visible {
+    -ms-overflow-style: block;
+    /* IE and Edge */
+    scrollbar-width: block;
+    /* Firefox */
+  }
+}
+
+a {
+  color: #262626;
+}
+
+html body {
+  background-color: var(--secondary);
+}

@@ -1,0 +1,907 @@
+{
+  "GameId3": {
+    "En": {
+      "title": "Draw no bet",
+      "ID": "9",
+      "description": "Predict which team will WIN the match. If the teams draw the selection will be voided.",
+      "options": [
+        "1 (Home win)",
+        " 2 (Away win)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId1": {
+    "En": {
+      "title": "Home team odd/even ",
+      "ID": "9",
+      "description": "Predict whether the total goals scored by Home team in the match would be odd (1,3,5,7...) or even (0,2,4,6,8...).",
+      "options": [
+        "ODD",
+        "EVEN"
+      ],
+      "example": " Team A vs Team B-> the prediction of 3 goals scored in total by Team A in the match will be ODD.",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId2": {
+    "En": {
+      "title": "Away team odd/even ",
+      "ID": "9",
+      "description": "Predict whether the total goals scored by Away team in the match would be odd (1,3,5,7...) or even (0,2,4,6,8...). ",
+      "options": [
+        "ODD",
+        "EVEN"
+      ],
+      "example": " Team A vs Team B-> the prediction of 2 goals scored in total by Team B in the match will be EVEN.",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId0": {
+    "En": {
+      "title": "1st half - 1x2 & both teams to score ",
+      "ID": "9",
+      "description": "Predict the first half outcome and if both teams will score or not.",
+      "options": [
+        " 1 (Home win) & YES(GG)",
+        "X (Draw) & YES(GG)",
+        "2 (Away win) & YES(GG)",
+        " 1 (Home win) & NO(NG)",
+        "X (Draw) & NO(NG)",
+        "2 (Away win) & NO(NG)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId4": {
+    "En": {
+      "title": "2nd Half - Both teams to score ",
+      "ID": "9",
+      "description": "Predict the second half outcome and if both teams will score or not.",
+      "options": [
+        " 1 (Home win) & YES(GG)",
+        "X (Draw) & YES(GG)",
+        "2 (Away win) & YES(GG)",
+        " 1 (Home win) & NO(NG)",
+        "X (Draw) & NO(NG)",
+        "2 (Away win) & NO(NG)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId5": {
+    "En": {
+      "title": "1st half - exact goals",
+      "ID": "9",
+      "description": "Predict the exact total number of the goals scored first half.",
+      "options": [
+        " 0 (bet wins when there is no goal scored in the first half)",
+        "1 ( bet wins if there is exactly 1 goal in the first half (1:0 or 0:1))",
+        "2 ( bet wins if there are exactly 2 goals in the first half (0:2, or 1:1, or 2:0))",
+        "3+ ( bet wins if there are exactly  3 goals and more than 3 goals in the first half)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId6": {
+    "En": {
+      "title": "2nd half - exact goals",
+      "ID": "9",
+      "description": "Predict the exact total number of the goals scored second half.",
+      "options": [
+        " 0 (bet wins when there is no goal scored in the second half)",
+        "1 ( bet wins if there is exactly 1 goal in the second half (1:0 or 0:1))",
+        "2 ( bet wins if there are exactly 2 goals in the second half (0:2, or 1:1, or 2:0))",
+        "3+ ( bet wins if there are exactly  3 goals and more than 3 goals in the second half)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId7": {
+    "En": {
+      "title": "2nd half - 3 Way",
+      "ID": "9",
+      "description": "This market has 3 possible outcomes at the *second half.",
+      "options": [
+        " 1 (Home win)",
+        "X (Draw)",
+        " 2 (Away win)"
+      ],
+      "example": "Team A vs Team B, the prediction of Team A win second half would be 1 (Home win),the prediction of Draw second half would be X (Draw),the prediction of Team B win second half would be 2 (Away win)",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId8": {
+    "En": {
+      "title": "2nd Half - Over/Under",
+      "ID": "9",
+      "description": "Predict whether the total number of goals at second Half will be over or under a given Asian goal line..",
+      "options": [
+        "OVER 0.5",
+        "UNDER 0.5",
+        "OVER 1.5",
+        "UNDER 1.5",
+        "OVER 2.5",
+        "UNDER 2.5"
+      ],
+      "example": "If you want to bet on : on second Half time there will be g1 or more goals click OVER 0.5. If you want to bet on : on second Half time there will be no goals click UNDER 0.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId9": {
+    "En": {
+      "title": "1st goal",
+      "ID": "9",
+      "description": "Predict which team will score the first goal in a match",
+      "options": [
+        "1 (Home team to score the first goal)",
+        "None (No team will score the first goal (0:0))",
+        "2 (Away team will score the first goal)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId10": {
+    "En": {
+      "title": "Last  goal",
+      "ID": "9",
+      "description": "Predict which team will score the Last  goal in a match",
+      "options": [
+        "1 (Home team to score the Last  goal)",
+        "None (No team will score the Last  goal )",
+        "2 (Away team will score the Last  goal)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId11": {
+    "En": {
+      "title": "1st Half Double Chance ",
+      "ID": "",
+      "description": "This market has 3 possible outcomes at *Half Time:(45 Minutes + Stoppage time).",
+      "options": [
+        "1 or X(Home or draw)",
+        "X or 2(draw or away)",
+        "1 or 2(home or away)"
+      ],
+      "example": " Team A vs Team B,the prediction of Team A win would be 1 or X(Home or draw) & 1 or 2(home or away),the prediction of Draw would be 1 or X(Home or draw) & X or 2(draw or away),the prediction of Team B win would be 1 or 2(home or away) & X or 2(draw or away).",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId12": {
+    "En": {
+      "title": "2nd half - double chance ",
+      "ID": "",
+      "description": "This market has 3 possible outcomes at 2nd half:(45-90 Minutes + Stoppage time).",
+      "options": [
+        "1 or X(Home or draw)",
+        "X or 2(draw or away)",
+        "1 or 2(home or away)"
+      ],
+      "example": " Team A vs Team B,the prediction of Team A win would be 1 or X(Home or draw) & 1 or 2(home or away),the prediction of Draw would be 1 or X(Home or draw) & X or 2(draw or away),the prediction of Team B win would be 1 or 2(home or away) & X or 2(draw or away).",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId13": {
+    "En": {
+      "title": "1st Half  - correct score",
+      "ID": "",
+      "description": "This game type is on the correct score of *Half Time:(45 Minutes + Stoppage time).",
+      "options": [
+        "Home team zero:away team zero(0:0)",
+        "Home team one:away team zero(1:0)",
+        "Home team two:away team zero(2:0)",
+        "Home team zero:away team one(0:1)",
+        "Home team zero:away team two(0:2)",
+        "Home team one:away team one(1:1)",
+        "Home team two:away team one(2:1)",
+        "Home team one:away team two(1:2)",
+        "Home team two:away team two(2:2)"
+      ],
+      "example": "If you want to bet on:- ON 1st Half  Home Team will Win with score of 2:0 click 2:0. If you want to bet on:- ON 1st Half AWAY Team will Win with score of 0:2 click 0:2",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId14": {
+    "En": {
+      "title": "2nd half - correct score",
+      "ID": "",
+      "description": "This game type is on the correct score of 2nd half:(45-90 Minutes + Stoppage time).",
+      "options": [
+        "Home team zero:away team zero(0:0)",
+        "Home team one:away team zero(1:0)",
+        "Home team two:away team zero(2:0)",
+        "Home team zero:away team one(0:1)",
+        "Home team zero:away team two(0:2)",
+        "Home team one:away team one(1:1)",
+        "Home team two:away team one(2:1)",
+        "Home team one:away team two(1:2)",
+        "Home team two:away team two(2:2)"
+      ],
+      "example": "If you want to bet on:- ON 2nd half  Home Team will Win with score of 2:0 click 2:0. If you want to bet on:- ON 2nd half AWAY Team will Win with score of 0:2 click 0:2",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId15": {
+    "En": {
+      "title": "1st half - odd/even",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at *half Time:(45 Minutes + Stoppage time)",
+      "options": [
+        "Odd",
+        "Even"
+      ],
+      "example": "If you want to bet on:- ON 1st half the sum of the total goals will be ODD number(1,3,5...) click ODD. If you want to bet on:- ON 1st half the sum of the total goals will be EVEN number (0,2,4...) click EVEN",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId16": {
+    "En": {
+      "title": "2nd half - odd/even",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at 2nd half:(45-90 Minutes + Stoppage time)",
+      "options": [
+        "Odd",
+        "Even"
+      ],
+      "example": "If you want to bet on:- ON 2nd half the sum of the total goals will be ODD number(1,3,5...) click ODD. If you want to bet on:- ON 2nd half the sum of the total goals will be EVEN number (0,2,4...) click EVEN",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId17": {
+    "En": {
+      "title": "1st half - handicap 0:1",
+      "ID": "",
+      "description": "This market has 3 possible outcomes at *half Time:(45 Minutes + Stoppage time)",
+      "options": [
+        "Hulu Advance (0:1) - 1 (Home win)",
+        "Hulu Advance (0:2) - 1 (Home win)",
+        "Hulu Advance (1:0) - 1 (Home win)",
+        "Hulu Advance (2:0) - 1 (Home win)",
+        "Hulu Advance (0:1)- X (Draw)",
+        "Hulu Advance (0:2)- X (Draw)",
+        "Hulu Advance (1:0)- X (Draw)",
+        "Hulu Advance (2:0)- X (Draw)",
+        "Hulu Advance (0:1)- 2 (Away win)",
+        "Hulu Advance (0:2)- 2 (Away win)",
+        "Hulu Advance (1:0)- 2 (Away win)",
+        "Hulu Advance (2:0)- 2 (Away win)"
+      ],
+      "example": "On this game Topbet7 gives 1 advance goal to Home Team to bet on 1st half result -home team win: at 1st half if the game result is Draw or Home team Win - Draw: at 1st half if Away team wins Home team by 1 goal difference - Away team win: at 1st half if Away team wins Home team by 2 or more goal difference, to bet on Home team win click on 1 to bet on Draw click on X to bet on Away team win click on 2",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId18": {
+    "En": {
+      "title": "2nd half - handicap 0:1",
+      "ID": "",
+      "description": "This market has 3 possible outcomes at 2nd half:(45-90 Minutes + Stoppage time)",
+      "options": [
+        "Hulu Advance (0:1) - 1 (Home win)",
+        "Hulu Advance (0:2) - 1 (Home win)",
+        "Hulu Advance (1:0) - 1 (Home win)",
+        "Hulu Advance (2:0) - 1 (Home win)",
+        "Hulu Advance (0:1)- X (Draw)",
+        "Hulu Advance (0:2)- X (Draw)",
+        "Hulu Advance (1:0)- X (Draw)",
+        "Hulu Advance (2:0)- X (Draw)",
+        "Hulu Advance (0:1)- 2 (Away win)",
+        "Hulu Advance (0:2)- 2 (Away win)",
+        "Hulu Advance (1:0)- 2 (Away win)",
+        "Hulu Advance (2:0)- 2 (Away win)"
+      ],
+      "example": "On this game Topbet7 gives 1 advance goal to Home Team to bet on 2nd half result -home team win: at 2nd half if the game result is Draw or Home team Win - Draw: at 2nd half if Away team wins Home team by 1 goal difference - Away team win: at 2nd half if Away team wins Home team by 2 or more goal difference, to bet on Home team win click on 1 to bet on Draw click on X to bet on Away team win click on 2",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId19": {
+    "En": {
+      "title": "1st half - 1st goal",
+      "ID": "9",
+      "description": "Predict which team will score the first goal in *half Time:(45 Minutes + Stoppage time)",
+      "options": [
+        "1 (Home team to score the first goal)",
+        "None (No team will score the first goal (0:0))",
+        "2 (Away team will score the first goal)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId20": {
+    "En": {
+      "title": "1st half - 1x2 & over/under",
+      "ID": "",
+      "description": "This market Predict the *half Time:(45 Minutes + Stoppage time)",
+      "options": [
+        "1 and OVER 0.5",
+        "1 and OVER 1.5",
+        "1 and OVER 2.5",
+        "X and OVER 0.5",
+        "X and OVER 1.5",
+        "X and OVER 2.5",
+        "2 and OVER 0.5",
+        "2 and OVER 1.5",
+        "2 and OVER 2.5",
+        "1 and UNDER 0.5",
+        "1 and UNDER 1.5",
+        "1 and UNDER 2.5",
+        "X and UNDER 0.5",
+        "X and UNDER 1.5",
+        "X and UNDER 2.5",
+        "2 and UNDER 0.5",
+        "2 and UNDER 1.5",
+        "2 and UNDER 2.5"
+      ],
+      "example": "If you want to bet on :Predict the 1st half outcome home(1) or draw(x) or away(2) and the total number of goals in first half will be Over or Under in a given line.",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId21": {
+    "En": {
+      "title": "2nd half - 1x2 & over/under",
+      "ID": "",
+      "description": "This market Predict the 2nd half:(45-90 Minutes + Stoppage time)",
+      "options": [
+        "1 and OVER 0.5",
+        "1 and OVER 1.5",
+        "1 and OVER 2.5",
+        "X and OVER 0.5",
+        "X and OVER 1.5",
+        "X and OVER 2.5",
+        "2 and OVER 0.5",
+        "2 and OVER 1.5",
+        "2 and OVER 2.5",
+        "1 and UNDER 0.5",
+        "1 and UNDER 1.5",
+        "1 and UNDER 2.5",
+        "X and UNDER 0.5",
+        "X and UNDER 1.5",
+        "X and UNDER 2.5",
+        "2 and UNDER 0.5",
+        "2 and UNDER 1.5",
+        "2 and UNDER 2.5"
+      ],
+      "example": "If you want to bet on :Predict the 2nd half outcome home(1) or draw(x) or away(2) and the total number of goals in 2nd half will be Over or Under in a given line.",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId22": {
+    "En": {
+      "title": "2nd Half - Over/Under",
+      "ID": "",
+      "description": "Predict whether the total number of goals at second Half will be over or under a given line.",
+      "options": [
+        "OVER 0.5",
+        "UNDER 0.5",
+        "OVER 1.5",
+        "UNDER 1.5",
+        "OVER 2.5",
+        "UNDER 2.5"
+      ],
+      "example": "If you want to bet on : on second Half there will be 1 or more goals click OVER 0.5. If you want to bet on : on second Half  there will be no goals click UNDER 0.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId23": {
+    "En": {
+      "title": "2nd Half- 1x2 & Both teams to score ",
+      "ID": "",
+      "description": "Predict the second half outcome and if both teams will score or not.",
+      "options": [
+        "1 (Home win) & YES(GG)",
+        " 1 (Home win) & NO(NG)",
+        "X (Draw) & YES(GG)",
+        "X (Draw) & NO(NG)",
+        "2 (Away win) & YES(GG)",
+        "2 (Away win) & NO(NG)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId24": {
+    "En": {
+      "title": "2nd Half- Both Team Score",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at 2nd half:(45-90 Minutes + Stoppage time)",
+      "options": [
+        "YES(GG)",
+        "NO(NG)"
+      ],
+      "example": "If you want to bet on : Both Team will Score in 2nd Half click YES(GG). If you want to bet on : Both Team will NOT Score in 2nd Half click NO(NG)",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId25": {
+    "En": {
+      "title": "Which team to score",
+      "ID": "",
+      "description": "This market has 4 possible outcomes at *Full Time:(90 Minutes + Stoppage time)",
+      "options": [
+        "only 1(home)",
+        "only 2(away)",
+        "both teams",
+        "None(No team will score))"
+      ],
+      "example": "If you want to bet on :only home team will Score in full time click only 1. If you want to bet on :only away team will Score in full time click only 2.If you want to bet on :both team will Score in full time click both teams.If you want to bet on :both team will not Score in full time click none.)",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId26": {
+    "En": {
+      "title": "1st half - double chance & both teams to score ",
+      "ID": "",
+      "description": "Predict the first half(45 Minutes + Stoppage time) outcome either 1/x(home win or draw),x/2(draw or away win ) or 1/2(home win or away win) and if both teams will score or not in first half.",
+      "options": [
+        "1/x & yes",
+        "1/x & no",
+        "1/2 & yes",
+        "1/2 & no",
+        "x/2 & yes",
+        "x/2 & no"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId27": {
+    "En": {
+      "title": "2nd half - double chance & both teams to score",
+      "ID": "",
+      "description": "Predict the 2nd half(45-90 Minutes + Stoppage time) outcome either 1/x(home win or draw),x/2(draw or away win ) or 1/2(home win or away win) and if both teams will score or not in second half.",
+      "options": [
+        "1/x & yes",
+        "1/x & no",
+        "1/2 & yes",
+        "1/2 & no",
+        "x/2 & yes",
+        "x/2 & no"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId28": {
+    "En": {
+      "title": "1st half - draw no bet",
+      "ID": "",
+      "description": "Predict which team will WIN the match in first half(45 Minutes + Stoppage time). If the teams draw at first half the selection will be voided.",
+      "options": [
+        "1 (Home win)",
+        " 2 (Away win)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId29": {
+    "En": {
+      "title": "2nd half - draw no bet",
+      "ID": "",
+      "description": "Predict which team will WIN the match in 2nd half(45-90 Minutes + Stoppage time). If the teams draw at 2nd half the selection will be voided.",
+      "options": [
+        "1 (Home win)",
+        " 2 (Away win)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId30": {
+    "En": {
+      "title": "1st half - home team over/under",
+      "ID": "",
+      "description": "Predict whether the total number of home team goals in first Half(45 Minutes + Stoppage time) will be over or under a given line.",
+      "options": [
+        "OVER 0.5",
+        "UNDER 0.5",
+        "OVER 1.5",
+        "UNDER 1.5",
+        "OVER 2.5",
+        "UNDER 2.5"
+      ],
+      "example": "If you want to bet on : on first Half home team scores  2 or more goals click OVER 2.5.If you want to bet on : on first Half home team scores 2 or less goals click under 2.5. If you want to bet on : on first Half  home team  not scores any  goals click UNDER 0.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId31": {
+    "En": {
+      "title": "1st half - away team over/under",
+      "ID": "",
+      "description": "Predict whether the total number of away team goals in first Half(45 Minutes + Stoppage time) will be over or under a given line.",
+      "options": [
+        "OVER 0.5",
+        "UNDER 0.5",
+        "OVER 1.5",
+        "UNDER 1.5",
+        "OVER 2.5",
+        "UNDER 2.5"
+      ],
+      "example": "If you want to bet on : on first Half away team scores  2 or more goals click OVER 2.5.If you want to bet on : on first Half away team scores 2 or less goals click under 2.5. If you want to bet on : on first Half  away team  not scores any  goals click UNDER 0.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId32": {
+    "En": {
+      "title": "second half - away team over/under",
+      "ID": "",
+      "description": "Predict whether the total number of away team goals in 2nd half(45-90 Minutes + Stoppage time) will be over or under a given line.",
+      "options": [
+        "OVER 0.5",
+        "UNDER 0.5",
+        "OVER 1.5",
+        "UNDER 1.5",
+        "OVER 2.5",
+        "UNDER 2.5"
+      ],
+      "example": "If you want to bet on : on 2nd half away team scores  2 or more goals click OVER 2.5.If you want to bet on : on 2nd half away team scores 2 or less goals click under 2.5. If you want to bet on : on 2nd half  away team  not scores any  goals click UNDER 0.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId33": {
+    "En": {
+      "title": "second half - home team over/under",
+      "ID": "",
+      "description": "Predict whether the total number of home team goals in 2nd half(45-90 Minutes + Stoppage time) will be over or under a given line.",
+      "options": [
+        "OVER 0.5",
+        "UNDER 0.5",
+        "OVER 1.5",
+        "UNDER 1.5",
+        "OVER 2.5",
+        "UNDER 2.5"
+      ],
+      "example": "If you want to bet on : on 2nd half home team scores  2 or more goals click OVER 2.5.If you want to bet on : on 2nd half home team scores 2 or less goals click under 2.5. If you want to bet on : on 2nd half  home team  not scores any  goals click UNDER 0.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId34": {
+    "En": {
+      "title": "home highest scoring half",
+      "ID": "",
+      "description": "Predict which half will have the most goals in a match scored by home team",
+      "options": [
+        "FIRST HALF",
+        "SECOND HALF",
+        "equal"
+      ],
+      "example": "If you want to bet on : Most of the goals will be scored on first half  by home team click FIRST HALF. If you want to bet on : Most of the goals will be scored by home team on second half click SECOND HALF.If you want to bet on : Most of the goals will be scored by home team on both halves are equal click equal",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId35": {
+    "En": {
+      "title": "away highest scoring half",
+      "ID": "",
+      "description": "Predict which half will have the most goals in a match scored by away team",
+      "options": [
+        "FIRST HALF",
+        "SECOND HALF",
+        "equal"
+      ],
+      "example": "If you want to bet on : Most of the goals will be scored on first half  by away team click FIRST HALF. If you want to bet on : Most of the goals will be scored by away team on second half click SECOND HALF.If you want to bet on : Most of the goals will be scored by away team on both halves are equal click equal",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId36": {
+    "En": {
+      "title": "home team - exact goals",
+      "ID": "",
+      "description": "Predict the exact total number of goals scored by home team.",
+      "options": [
+        " 0 (bet wins when there is no goal scored by home team)",
+        "1 ( bet wins if there is exactly 1 goal scored by home team (1:0 or 0:1))",
+        "2 ( bet wins if there are exactly 2 goals scored by home team (0:2, or 1:1, or 2:0))",
+        "3+ ( bet wins if there are exactly  3 goals and more than 3 goals scored by home team)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId37": {
+    "En": {
+      "title": "away team - exact goals",
+      "ID": "",
+      "description": "Predict the exact total number of goals scored by away team.",
+      "options": [
+        " 0 (bet wins when there is no goal scored by away team)",
+        "1 ( bet wins if there is exactly 1 goal scored by away team (1:0 or 0:1))",
+        "2 ( bet wins if there are exactly 2 goals scored by away team (0:2, or 1:1, or 2:0))",
+        "3+ ( bet wins if there are exactly  3 goals and more than 3 goals scored by away team)"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId38": {
+    "En": {
+      "title": "over/under & both teams to score",
+      "ID": "",
+      "description": "Predict whether the total number of goals scored at *Full Time:(90 Minutes + Stoppage time) is over or under a given line and if both teams will score or not in *Full Time:(90 Minutes + Stoppage time)  ",
+      "options": [
+        "over 2.5 & yes",
+        "over 2.5 & no",
+        "under 2.5 & yes",
+        "under 2.5 & yes"
+      ],
+      "example": "If you want to bet on : On full time the final score will be 2:1 click over 2.5 & yes. If you want to bet on : On full time the final score will be 1:1 click under 2.5 & yes. If you want to bet on : On full time the final score will be 1:0 click under 2.5 & no. If you want to bet on : On full time the final score will be 4:0 click over 2.5 & no",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId39": {
+    "En": {
+      "title": " double chance & over/under ",
+      "ID": "",
+      "description": "Predict the *Full Time:(90 Minutes + Stoppage time) outcome either 1/x(home win or draw),x/2(draw or away win ) or 1/2(home win or away win) and the total number of goals in *Full Time:(90 Minutes + Stoppage time) will be over or under a given line.",
+      "options": [
+        "1/x & over 0.5",
+        "1/x & under 0.5",
+        "1/x & over 1.5",
+        "1/x & under 1.5",
+        "1/x & over 2.5",
+        "1/x & under 2.5",
+        "1/x & over 3.5",
+        "1/x & under 3.5",
+        "1/x & over 4.5",
+        "1/x & under 4.5",
+        "1/2 & over 0.5",
+        "1/2 & under 0.5",
+        "1/2 & over 1.5",
+        "1/2 & under 1.5",
+        "1/2 & over 2.5",
+        "1/2 & under 2.5",
+        "1/2 & over 3.5",
+        "1/2 & under 3.5",
+        "1/2 & over 4.5",
+        "1/2 & under 4.5",
+        "x/2 & over 0.5",
+        "x/2 & under 0.5",
+        "x/2 & over 1.5",
+        "x/2 & under 1.5",
+        "x/2 & over 2.5",
+        "x/2 & under 2.5",
+        "x/2 & over 3.5",
+        "x/2 & under 3.5",
+        "x/2 & over 4.5",
+        "x/2 & under 4.5"
+      ],
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time including all injury and stoppage time."
+    }
+  },
+  "GameId40": {
+    "En": {
+      "title": " home team to win both halves",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at *Full Time:(90 Minutes + Stoppage time)",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "example": "If you want to bet on : home team will win both first half and second half  click yes. If you want to bet on :home team will win either half  or defeat  either half  click no.",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId41": {
+    "En": {
+      "title": " away team to win both halves",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at *Full Time:(90 Minutes + Stoppage time)",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "example": "If you want to bet on : away team will win both first half and second half  click yes. If you want to bet on :away team will win either half  or defeat  either half  click no.",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId42": {
+    "En": {
+      "title": " home team to score in both halves",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at *Full Time:(90 Minutes + Stoppage time)",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "example": "If you want to bet on : home team will score both first half and second half  click yes. If you want to bet on :home team will score either half  or not score both halves  click no.",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId43": {
+    "En": {
+      "title": " both halves over 1.5",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at *Full Time:(90 Minutes + Stoppage time)",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "example": "If you want to bet on : the total goal scored by home and away team in  both halves is over 2 goales  click yes. If you want to bet on :the total goal scored by home and away team in  both halves is under 2 goales  click no",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId44": {
+    "En": {
+      "title": " both halves under 1.5",
+      "ID": "",
+      "description": "This market has 2 possible outcomes at *Full Time:(90 Minutes + Stoppage time)",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "example": "If you want to bet on : the total goal scored by home and away team in  both halves is over 2 goales  click no. If you want to bet on :the total goal scored by home and away team in  both halves is under 2 goales  click yes",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId45": {
+    "En": {
+      "title": "10 minutes - 3 Way from 1 to 10",
+      "ID": "",
+      "description": "This market has 3 possible outcomes at *10 minuets:(1 to 10 minutes of first half )",
+      "options": [
+        "1 (Home win)",
+        "X (Draw)",
+        "2 (Away win)"
+      ],
+      "example": "Team A vs Team B,the prediction of Team A win in the first 10 minutes would be 1 (Home win),the prediction of Draw in the first 10 minutes would be X (Draw),the prediction of Team B win in the first 10 minutes would be 2 (Away win)",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time."
+    }
+  },
+  "GameId46": {
+    "En": {
+      "title": "Half Time/Full Time and  Over/Under",
+      "ID": "",
+      "description": "This Game Predicts on what will be the result on half time and what will be the result on *Full Time:(90 Minutes + Stoppage time) and the total number of goals scored by the team is either under or over the given line.",
+      "options": [
+        "Half time Result Home team Wins / Full time Result Home team Wins(1/1) and  over 2.5",
+        "Half time Result Home team Wins / Full time Result Draw(1/X) and over 2.5",
+        "Half time Result Home team Wins / Full time Result Away team Wins(1/2) and  over 2.5",
+        "Half time Result Draw / Full time Result Draw(X/X) and  over 2.5",
+        "Half time Result Draw / Full time Result Home team Wins(X/1) and over 2.5",
+        "Half time Result Draw / Full time Result Away team Wins(X/2) and over 2.5",
+        "Half time Result Away team Wins / Full time Result Away team Wins(2/2)and over 2.5",
+        "Half time Result Away team Wins / Full time Result Draw(2/X)and over 2.5",
+        "Half time Result Away team Wins / Full time Result Home team Wins(2/1)and over 2.5",
+        "Half time Result Home team Wins / Full time Result Home team Wins(1/1) and  under 2.5",
+        "Half time Result Home team Wins / Full time Result Draw(1/X) and under 2.5",
+        "Half time Result Draw / Full time Result Draw(X/X) and under 2.5",
+        "Half time Result Draw / Full time Result Home team Wins(X/1) and under 2.5",
+        "Half time Result Draw / Full time Result Away team Wins(X/2) and under 2.5",
+        "Half time Result Away team Wins / Full time Result Away team Wins(2/2)and under 2.5",
+        "Half time Result Away team Wins / Full time Result Draw(2/X)and under 2.5",
+        "Half time Result Home team Wins / Full time Result Home team Wins(1/1) and  over 3.5",
+        "Half time Result Home team Wins / Full time Result Draw(1/X) and over 3.5",
+        "Half time Result Home team Wins / Full time Result Away team Wins(1/2) and over 3.5",
+        "Half time Result Draw / Full time Result Draw(X/X) and over 3.5",
+        "Half time Result Draw / Full time Result Home team Wins(X/1) and over 3.5",
+        "Half time Result Draw / Full time Result Away team Wins(X/2) and over 3.5",
+        "Half time Result Away team Wins / Full time Result Away team Wins(2/2)and over 3.5",
+        "Half time Result Away team Wins / Full time Result Draw(2/X)and over 3.5",
+        "Half time Result Away team Wins / Full time Result Home team Wins(2/1)and over 3.5",
+        "Half time Result Home team Wins / Full time Result Home team Wins(1/1) and  under 3.5",
+        "Half time Result Home team Wins / Full time Result Draw(1/X) and under 3.5",
+        "Half time Result Home team Wins / Full time Result Away team Wins(1/2) and under 3.5",
+        "Half time Result Draw / Full time Result Draw(X/X) and under 3.5",
+        "Half time Result Draw / Full time Result Home team Wins(X/1) and under 3.5",
+        "Half time Result Draw / Full time Result Away team Wins(X/2) and under 3.5",
+        "Half time Result Away team Wins / Full time Result Away team Wins(2/2)and under 3.5",
+        "Half time Result Away team Wins / Full time Result Draw(2/X)and under 3.5",
+        "Half time Result Away team Wins / Full time Result Home team Wins(2/1)and under 3.5"
+      ],
+      "example": "if you want to bet on: the half time result will be away team Win but the full time result will be Draw by the final score of 2:2 click on 2/x and over 2.5 or 2/x and over 3.5.if you want to bet on: the half time result will be home team Win but the full time result will be away win by the final score of1:2 click on 1/2 and over 2.5 or 1/2 and under 3.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId47": {
+    "En": {
+      "title": "Halftime/fulltime & exact goals",
+      "ID": "",
+      "description": "This Game Predicts on what will be the result on half time and what will be the result on *Full Time:(90 Minutes + Stoppage time) and the  exact total  goals scored by the team in the given line.",
+      "options": [
+        "(1/1) and 1",
+        "(1/1) and 2",
+        "(X/X) and 1",
+        "(1/X) and 2",
+        "(X/1) and 1",
+        "(X/X) and 2",
+        "(X/2) and 1",
+        "(X/1) and 2",
+        "(2/2)and 1",
+        "(X/2) and 2",
+        "(2/2)and 2",
+        "(2/X)and 2",
+        "(1/1) and 3",
+        "(1/1) and 4",
+        "(1/X) and 3",
+        "(1/X) and 4",
+        "(1/2) and 3",
+        "(1/2) and 4",
+        "(X/X) and 3",
+        "(X/X) and 4",
+        "(X/1) and 3",
+        "(X/1) and 4",
+        "(X/2) and 3",
+        "(X/2) and 4",
+        "(2/2)and 3",
+        "(2/2)and 4",
+        "(2/X)and 3",
+        "(2/X)and 4",
+        "(2/1)and 3",
+        "(2/1)and 4",
+        "(1/1) and 5+",
+        "(1/X) and 5+",
+        "(1/2) and 5+",
+        "(X/X) and 5+",
+        "(X/1) and 5+",
+        "(X/2) and 5+",
+        "(2/2)and 5+",
+        "(2/X)and 5+",
+        "(2/1)and 5+"
+      ],
+      "example": "if you want to bet on: the half time result will be away team Win but the full time result will be Draw by the final score of 2:2 click on 2/x and 4 .if you want to bet on: the half time result will be home team Win but the full time result will be away win by the final score of 1:4 click on 1/2 and 5+",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId48": {
+    "En": {
+      "title": "Half Time/Full Time and first half Over/Under",
+      "ID": "",
+      "description": "This Game Predicts on what will be the result on half time and what will be the result on *Full Time:(90 Minutes + Stoppage time) and the total number of goals scored by the team in first half is either under or over the given line.",
+      "options": [
+        "(1/1) and first half over 0.5",
+        "(1/X) and first half over 0.5",
+        "(1/2) and first half over 0.5",
+        "(X/X) and  first half over 0.5",
+        "(X/1) and first half over 0.5",
+        "(X/2) and first half over 0.5",
+        "(2/2)and first half over 0.5",
+        "(2/X)and first half over 0.5",
+        "(2/1)and first half over 0.5",
+        "(X/X) and under 0.5",
+        "(X/1) and under 0.5",
+        "(X/2) and under 0.5",
+        "(1/1) and first half over 1.5",
+        "(1/X) and first half over 1.5",
+        "(1/2) and first half over 1.5",
+        "(X/X) and  first half over 1.5",
+        "(X/1) and first half over 1.5",
+        "(X/2) and first half over 1.5",
+        "(2/2)and first half over 1.5",
+        "(2/X)and first half over 1.5",
+        "(2/1)and first half over 1.5",
+        "(1/1) and first half under 1.5",
+        "(1/X) and first half under 1.5",
+        "(1/2) and first half under 1.5",
+        "(X/X) and first half under 1.5",
+        "(X/1) and first half under 1.5",
+        "(X/2) and  first halfunder 1.5",
+        "(2/2)and first half under 1.5",
+        "(2/X)and first half under 1.5",
+        "(2/1)and first half under 1.5",
+        "(1/1) and first half over 2.5",
+        "(1/X) and first half over 2.5",
+        "(1/2) and first half over 2.5",
+        "(X/X) and  first half over 2.5",
+        "(X/1) and first half over 2.5",
+        "(X/2) and first half over 2.5",
+        "(2/2)and first half over 2.5",
+        "(2/X)and first half over 2.5",
+        "(2/1)and first half over 2.5",
+        "(1/1) and first half under 2.5",
+        "(1/X) and first half under 2.5",
+        "(1/2) and first half under 2.5",
+        "(X/X) and first half under 2.5",
+        "(X/1) and first half under 2.5",
+        "(X/2) and  first halfunder 2.5",
+        "(2/2)and first half under 2.5",
+        "(2/X)and first half under 2.5",
+        "(2/1)and first half under 2.5"
+      ],
+      "example": "if you want to bet on: the half time result will be away team Win by 0:1 score but the full time result will be Draw by the final score of 2:2 click on 2/x and over 0.5 or 2/x and under 1.5 ,2/x and under 2.5.if you want to bet on: the half time result will be home team Win by 2:0 score but the full time result will be away win by the final score of2:3 click on 1/2 and over 0.5,1/2 and over 1.5 , 1/2 and under 2.5",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  },
+  "GameId49": {
+    "En": {
+      "title": "Half Time/Full Time and correct score ",
+      "ID": "",
+      "description": "This Game Predicts on what will be the result on half time and what will be the result on *Full Time:(90 Minutes + Stoppage time) and the correct score of the game .",
+      "options": [],
+      "example": "if you want to bet on: the half time result will be away team Win by 0:1 score but the full time result will be Draw by the final score of 2:2 click on 2/x and 2:2.if you want to bet on: the half time result will be home team Win by 2:0 score but the full time result will be away win by the final score of2:3 click on 1/2 and 2:3",
+      "extra": "* Bets on this market are settled on the result of the match at the end of its full time"
+    }
+  }
+}

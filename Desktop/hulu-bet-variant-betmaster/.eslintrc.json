@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "globals": {
+    "React": "readonly" // react will available in the global scope as readonly; no need to warn us
+  },
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }], // ignore unused vars that start with  "_"
+    "react/prop-types": "off" // ignore unused vars that start with  "_"
+  }
+}
