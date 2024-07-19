@@ -1,0 +1,5155 @@
+{
+	"info": {
+		"_postman_id": "f76dce23-e3e9-4d2d-a832-d798eec39629",
+		"name": "Convex ERP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8728827"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Invoice",
+					"item": [
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"full_name\":\"Master Abebe\",\n    \"phone_no\":\"0911121314\",\n    \"email\":\"abc@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/invoices/list?unpaid=true&product=2",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"invoices",
+										"list"
+									],
+									"query": [
+										{
+											"key": "unpaid",
+											"value": "true"
+										},
+										{
+											"key": "product",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"full_name\":\"Master Abebe\",\n    \"phone_no\":\"0911121314\",\n    \"email\":\"abc@gmail.com\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/list",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"list"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 21 Dec 2023 07:23:56 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3518"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 20,\n    \"next\": \"http://localhost:8000/api/1/1/customers/1/invoices/list?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"creator_id\": 1,\n            \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-12-19T05:56:25.646742Z\",\n            \"last_paid_at\": \"2023-12-19T05:56:25.646742Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-12-19T05:56:25.646742Z\",\n            \"last_paid_at\": \"2023-12-19T05:56:25.646742Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": \"2023-10-13T00:00:00Z\",\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": null,\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": null,\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": null,\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": null,\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": null,\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": null,\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": null,\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": \"2023-10-13T00:00:00Z\",\n            \"last_paid_at\": \"2023-10-13T00:00:00Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"due_date\":\"2023-12-19T05:56:25.646742Z\",\n    \"total\":100,\n    \"product_id\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/6/invoices/create",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"6",
+										"invoices",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"due_date\":\"2023-12-19T05:56:25.646742Z\",\n    \"total\":100\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/create",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"create"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 09:15:48 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "395"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"creator_id\": 1,\n    \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n    \"is_auto_generated\": true,\n    \"customer\": {\n        \"id\": 1,\n        \"company_name\": \"abc2\"\n    },\n    \"creator\": {\n        \"is_super_admin\": true,\n        \"allowed_businesses\": [\n            {\n                \"id\": 1,\n                \"name\": \"convex\"\n            }\n        ],\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    },\n    \"business\": {\n        \"id\": 1,\n        \"name\": \"convex\"\n    },\n    \"organization\": {\n        \"id\": 1,\n        \"name\": \"convex\"\n    },\n    \"total\": 100,\n    \"paid_amount\": 0,\n    \"first_paid_at\": null,\n    \"last_paid_at\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Detail",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"full_name\":\"Master Abebe\",\n    \"phone_no\":\"0911121314\",\n    \"email\":\"abc@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/invoices/2",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"invoices",
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"full_name\":\"Master Abebe\",\n    \"phone_no\":\"0911121314\",\n    \"email\":\"abc@gmail.com\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/1",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 09:27:52 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "395"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"creator_id\": 1,\n    \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n    \"is_auto_generated\": true,\n    \"customer\": {\n        \"id\": 1,\n        \"company_name\": \"abc2\"\n    },\n    \"creator\": {\n        \"is_super_admin\": true,\n        \"allowed_businesses\": [\n            {\n                \"id\": 1,\n                \"name\": \"convex\"\n            }\n        ],\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    },\n    \"business\": {\n        \"id\": 1,\n        \"name\": \"convex\"\n    },\n    \"organization\": {\n        \"id\": 1,\n        \"name\": \"convex\"\n    },\n    \"total\": 100,\n    \"paid_amount\": 0,\n    \"first_paid_at\": null,\n    \"last_paid_at\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "Attach Invoice Document",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/attach-document",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"attach-document"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Attach Document",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/attach-document",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"attach-document"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 07:13:57 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "16"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "List Invoice Attachments",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/documents",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"documents"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List Documents",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/documents",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"documents"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 07:14:01 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "384"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 2.46678881993669178728231742200718148236e+38,\n        \"title\": \"Business License\",\n        \"file_type\": \"image/png\",\n        \"document_type\": {\n            \"id\": 5,\n            \"name\": \"Business License\",\n            \"description\": \"Business License Document\"\n        },\n        \"file\": \"http://localhost:8000/media/files/b9949fe2-5ffb-4cc8-86d1-610675e5c28c.png\",\n        \"description\": \"Just your normal everyday business document file\",\n        \"created_at\": \"2023-12-26T06:26:34.401059Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Documents",
+					"item": [
+						{
+							"name": "Attach Document",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/attach-document",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"attach-document"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Attach Document",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/attach-document",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"attach-document"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 07:13:57 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "16"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "List Attachments",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/documents",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"documents"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List Documents",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/documents",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"documents"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 07:14:01 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "384"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 2.46678881993669178728231742200718148236e+38,\n        \"title\": \"Business License\",\n        \"file_type\": \"image/png\",\n        \"document_type\": {\n            \"id\": 5,\n            \"name\": \"Business License\",\n            \"description\": \"Business License Document\"\n        },\n        \"file\": \"http://localhost:8000/media/files/b9949fe2-5ffb-4cc8-86d1-610675e5c28c.png\",\n        \"description\": \"Just your normal everyday business document file\",\n        \"created_at\": \"2023-12-26T06:26:34.401059Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Payment",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"payment_method_id\":2,\n    \"amount\": 11,\n    \"product_id\": 2\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/invoices/5/payments",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"invoices",
+										"5",
+										"payments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Exceeds",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"payment_method_id\":2,\n    \"amount\":12,\n    \"product_id\": 2\n}   ",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/2/payments",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"2",
+												"payments"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 08:00:46 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "77"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"non_field_errors\": [\n        \"Entered amount exceeds the unpaid amount by 4.0 birr\"\n    ]\n}"
+								},
+								{
+									"name": "Invalid payment method",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"payment_method_id\":20,\n    \"amount\":12,\n    \"product_id\": 2\n}   ",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/1/payments",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"1",
+												"payments"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 08:01:50 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "48"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"payment_method_id\": \"payment_method not found\"\n}"
+								},
+								{
+									"name": "Create",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"payment_method_id\":2,\n    \"amount\": 12,\n    \"product_id\": 2\n}   ",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/1/payments",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"1",
+												"payments"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 08:34:36 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "679"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 36,\n    \"payment_method\": {\n        \"id\": 2,\n        \"name\": \"Convex Main Bank 1234\",\n        \"bank_name\": \"Commercial Bank of Ethiopia\",\n        \"account_number\": \"10000123241234\",\n        \"is_company_bank\": true\n    },\n    \"amount\": 12,\n    \"invoice\": {\n        \"id\": 1,\n        \"customer_id\": 1,\n        \"customer\": {\n            \"id\": 1,\n            \"company_name\": \"abc2\"\n        },\n        \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n        \"is_auto_generated\": false,\n        \"total\": 100,\n        \"paid_amount\": 62,\n        \"created_at\": \"2023-12-28T10:30:30.878692Z\",\n        \"business\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        },\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        },\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"company 1\"\n        }\n    },\n    \"org_admin\": {\n        \"is_super_admin\": true,\n        \"allowed_businesses\": [\n            {\n                \"id\": 1,\n                \"name\": \"convex\"\n            }\n        ],\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    },\n    \"customer\": {\n        \"id\": 1,\n        \"company_name\": \"abc2\"\n    }\n}"
+								},
+								{
+									"name": "Invoice already paid",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"payment_method_id\":2,\n    \"amount\": 11,\n    \"product_id\": 2\n}   ",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/5/payments",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"5",
+												"payments"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 08:53:52 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"non_field_errors\": [\n        \"Invoice has already been paid up\"\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Detail",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"method\":\"cheque\",\n    \"amount\":13000,\n    \"bank_id\":3,\n    \"receipt\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/invoices/2/payments/36",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"invoices",
+										"2",
+										"payments",
+										"36"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"method\":\"cheque\",\n    \"amount\":13000,\n    \"bank_id\":3,\n    \"receipt\":1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/2/payments/36",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"2",
+												"payments",
+												"36"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 08:35:17 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "679"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 36,\n    \"payment_method\": {\n        \"id\": 2,\n        \"name\": \"Convex Main Bank 1234\",\n        \"bank_name\": \"Commercial Bank of Ethiopia\",\n        \"account_number\": \"10000123241234\",\n        \"is_company_bank\": true\n    },\n    \"amount\": 12,\n    \"invoice\": {\n        \"id\": 1,\n        \"customer_id\": 1,\n        \"customer\": {\n            \"id\": 1,\n            \"company_name\": \"abc2\"\n        },\n        \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n        \"is_auto_generated\": false,\n        \"total\": 100,\n        \"paid_amount\": 62,\n        \"created_at\": \"2023-12-28T10:30:30.878692Z\",\n        \"business\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        },\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        },\n        \"product\": {\n            \"id\": 1,\n            \"name\": \"company 1\"\n        }\n    },\n    \"org_admin\": {\n        \"is_super_admin\": true,\n        \"allowed_businesses\": [\n            {\n                \"id\": 1,\n                \"name\": \"convex\"\n            }\n        ],\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    },\n    \"customer\": {\n        \"id\": 1,\n        \"company_name\": \"abc2\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"note\":\"This is the first note\",\n    \"invoice_id\":124124\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/invoices/2/payments/list",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"invoices",
+										"2",
+										"payments",
+										"list"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"note\":\"This is the first note\",\n    \"invoice_id\":124124\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/invoices/2/payments/list",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"invoices",
+												"2",
+												"payments",
+												"list"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 08:36:00 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "5583"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"count\": 30,\n    \"next\": \"http://localhost:8000/api/1/1/customers/1/invoices/2/payments/list?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 30,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 29,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 28,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 27,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 26,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 25,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 24,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 23,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 22,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        },\n        {\n            \"id\": 21,\n            \"payment_method\": null,\n            \"amount\": 12,\n            \"invoice\": {\n                \"id\": 2,\n                \"customer_id\": 1,\n                \"customer\": {\n                    \"id\": 1,\n                    \"company_name\": \"abc2\"\n                },\n                \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n                \"is_auto_generated\": false,\n                \"total\": 100,\n                \"paid_amount\": 96,\n                \"created_at\": \"2023-12-28T10:33:45.855447Z\",\n                \"business\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                },\n                \"product\": {\n                    \"id\": 1,\n                    \"name\": \"company 1\"\n                }\n            },\n            \"org_admin\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Attach Payment Document",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/invoices/2/payments/36/attach-document",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"invoices",
+										"2",
+										"payments",
+										"36",
+										"attach-document"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Attach Document",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/attach-document",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"attach-document"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 07:13:57 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "POST, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "16"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "List Payment Attachments",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/invoices/2/payments/36/attachments",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"invoices",
+										"2",
+										"payments",
+										"36",
+										"attachments"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List Documents",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_id\":246678881993669178728231742200718148236\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/customers/1/documents",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"customers",
+												"1",
+												"documents"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 26 Dec 2023 07:14:01 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "384"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 2.46678881993669178728231742200718148236e+38,\n        \"title\": \"Business License\",\n        \"file_type\": \"image/png\",\n        \"document_type\": {\n            \"id\": 5,\n            \"name\": \"Business License\",\n            \"description\": \"Business License Document\"\n        },\n        \"file\": \"http://localhost:8000/media/files/b9949fe2-5ffb-4cc8-86d1-610675e5c28c.png\",\n        \"description\": \"Just your normal everyday business document file\",\n        \"created_at\": \"2023-12-26T06:26:34.401059Z\"\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company_name\":\"Hulu sport\",\n    \"license_issue_date\":\"2023-10-13 10:22\",\n    \"license_expiry_date\":\"2023-12-13 11:22\",\n    \"contact_person\":{\n        \"type\":\"owner\",\n        \"full_name\":\"Abebe\",\n        \"phone_number\":\"0911121314\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/customers",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"company_name\":\"my company\",\n    \"license_issue_date\":\"2023-10-13 10:22\",\n    \"license_expiry_date\":\"2023-12-13 11:22\",\n    \"owner\":{\n        \"type\":\"owner\",\n        \"full_name\":\"Abebe\",\n        \"phone_number\":\"0911121314\"\n    },\n    \"contact\":{\n        \"type\":\"contact\",\n        \"full_name\":\"Abebe\",\n        \"phone_number\":\"0911121314\",\n        \"email\":\"abc@gmail.com\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:28:30 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "393"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"company_name\": \"my company\",\n    \"license_issue_date\": \"2023-10-13T10:22:00Z\",\n    \"license_expiry_date\": \"2023-12-13T11:22:00Z\",\n    \"is_active\": true,\n    \"customer_owner\": {\n        \"id\": 18,\n        \"created_at\": \"2023-12-21T07:28:30.530131Z\",\n        \"updated_at\": \"2023-12-21T07:28:30.530147Z\",\n        \"full_name\": \"Abebe\",\n        \"email\": null,\n        \"phone_number\": \"0911121314\",\n        \"description\": null,\n        \"type\": \"owner\",\n        \"customer\": null,\n        \"documents\": []\n    },\n    \"creator\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/customers?page=1",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"page\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers?page=1",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 01:59:52 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1141"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 3,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"unpaid_balance\": 2000,\n            \"id\": 1,\n            \"company_name\": \"abc2\",\n            \"license_issue_date\": null,\n            \"license_expiry_date\": null,\n            \"is_active\": true,\n            \"customer_owner\": {\n                \"id\": 14,\n                \"created_at\": \"2023-12-19T05:55:50.212542Z\",\n                \"updated_at\": \"2023-12-19T05:55:50.212607Z\",\n                \"full_name\": \"Abebe\",\n                \"email\": null,\n                \"phone_number\": \"0911121314\",\n                \"description\": null,\n                \"type\": \"owner\",\n                \"customer\": null,\n                \"documents\": []\n            }\n        },\n        {\n            \"unpaid_balance\": 200,\n            \"id\": 2,\n            \"company_name\": \"abc2\",\n            \"license_issue_date\": null,\n            \"license_expiry_date\": null,\n            \"is_active\": true,\n            \"customer_owner\": {\n                \"id\": 15,\n                \"created_at\": \"2023-12-19T05:56:05.108893Z\",\n                \"updated_at\": \"2023-12-19T05:56:05.109040Z\",\n                \"full_name\": \"Abebe\",\n                \"email\": null,\n                \"phone_number\": \"0911121314\",\n                \"description\": null,\n                \"type\": \"owner\",\n                \"customer\": null,\n                \"documents\": []\n            }\n        },\n        {\n            \"unpaid_balance\": 100,\n            \"id\": 3,\n            \"company_name\": \"abc2\",\n            \"license_issue_date\": null,\n            \"license_expiry_date\": null,\n            \"is_active\": true,\n            \"customer_owner\": {\n                \"id\": 16,\n                \"created_at\": \"2023-12-19T05:56:25.646742Z\",\n                \"updated_at\": \"2023-12-19T05:56:25.646768Z\",\n                \"full_name\": \"Abebe\",\n                \"email\": null,\n                \"phone_number\": \"0911121314\",\n                \"description\": null,\n                \"type\": \"owner\",\n                \"customer\": null,\n                \"documents\": []\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List payments for customers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":2,\n    \"operator_id\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/customers/1/payments/list",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"customers",
+								"1",
+								"payments",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List payments for operator",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"page\":2,\n    \"operator_id\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/payments/list",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"payments",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 02:06:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 0,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{convexURL}}/1/1/customers/1",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:28:59 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "351"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"company_name\": \"abc2\",\n    \"license_issue_date\": null,\n    \"license_expiry_date\": null,\n    \"is_active\": true,\n    \"customer_owner\": {\n        \"id\": 14,\n        \"created_at\": \"2023-12-19T05:55:50.212542Z\",\n        \"updated_at\": \"2023-12-19T05:55:50.212607Z\",\n        \"full_name\": \"Abebe\",\n        \"email\": null,\n        \"phone_number\": \"0911121314\",\n        \"description\": null,\n        \"type\": \"owner\",\n        \"customer\": null,\n        \"documents\": []\n    },\n    \"creator\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Toggle active",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{convexURL}}/1/1/customers/1/toggle-active",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"customers",
+								"1",
+								"toggle-active"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Toggle active",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{convexURL}}/1/1/customers/1/toggle-active",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"customers",
+										"1",
+										"toggle-active"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 02:06:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "PUT, PATCH, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{convexURL}}/1/1/invoices?customer=1&page=1&creation_date=&due_date=&first_paid_at=&last_paid_at=",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "customer",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "creation_date",
+									"value": ""
+								},
+								{
+									"key": "due_date",
+									"value": ""
+								},
+								{
+									"key": "first_paid_at",
+									"value": ""
+								},
+								{
+									"key": "last_paid_at",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{convexURL}}/1/1/invoices?customer=1&page=1&creation_date=&due_date=&first_paid_at=&last_paid_at=",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"invoices"
+									],
+									"query": [
+										{
+											"key": "customer",
+											"value": "1"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "creation_date",
+											"value": ""
+										},
+										{
+											"key": "due_date",
+											"value": ""
+										},
+										{
+											"key": "first_paid_at",
+											"value": ""
+										},
+										{
+											"key": "last_paid_at",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 09:29:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "843"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 2,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"creator_id\": 1,\n            \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"business\": {\n                \"id\": 1,\n                \"name\": \"convex\"\n            },\n            \"organization\": {\n                \"id\": 1,\n                \"name\": \"convex\"\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": null,\n            \"last_paid_at\": null\n        },\n        {\n            \"creator_id\": 1,\n            \"due_date\": \"2023-12-19T05:56:25.646742Z\",\n            \"is_auto_generated\": true,\n            \"customer\": {\n                \"id\": 1,\n                \"company_name\": \"abc2\"\n            },\n            \"creator\": {\n                \"is_super_admin\": true,\n                \"allowed_businesses\": [\n                    {\n                        \"id\": 1,\n                        \"name\": \"convex\"\n                    }\n                ],\n                \"organization\": {\n                    \"id\": 1,\n                    \"name\": \"convex\"\n                }\n            },\n            \"business\": {\n                \"id\": 1,\n                \"name\": \"convex\"\n            },\n            \"organization\": {\n                \"id\": 1,\n                \"name\": \"convex\"\n            },\n            \"total\": 100,\n            \"paid_amount\": 0,\n            \"first_paid_at\": null,\n            \"last_paid_at\": null\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":1,\n    \"operator\":4,\n    \"creation_date\":null,\n    \"bank\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/payments",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"payments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"page\":1,\n    \"operator\":4,\n    \"creation_date\":null,\n    \"bank\":3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/payments",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"payments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 09:29:33 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 0,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "Upload",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/tibebe/Documents/Bildschirmfoto 2023-03-02 um 13.53.41.png"
+								},
+								{
+									"key": "document_type",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Business License",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Just your normal everyday business document file",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/documents",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"documents"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Upload",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/tibebe/Documents/Bildschirmfoto 2023-03-02 um 13.53.41.png"
+										},
+										{
+											"key": "document_type",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "Business License",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Just your normal everyday business document file",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/documents",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"documents"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 06:48:31 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "382"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2.49635769337764405059840346384824085482e+38,\n    \"title\": \"Business License\",\n    \"file_type\": \"image/png\",\n    \"document_type\": {\n        \"id\": 5,\n        \"name\": \"Business License\",\n        \"description\": \"Business License Document\"\n    },\n    \"file\": \"http://localhost:8000/media/files/bbce19af-9af6-48cc-8691-226896e52bea.png\",\n    \"description\": \"Just your normal everyday business document file\",\n    \"created_at\": \"2023-12-26T06:48:31.811317Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Document Types",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{convexURL}}/1/1/document-types",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"document-types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Document Types",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{convexURL}}/1/1/document-types",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"document-types"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 06:48:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "308"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"\",\n        \"description\": null\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Business License\",\n        \"description\": \"Business License Document\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"\",\n        \"description\": null\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Business License\",\n        \"description\": \"Business License Document\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Business License\",\n        \"description\": \"Business License Document\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add Document Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Business License\",\n    \"description\": \"Business License Document\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/document-types",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"document-types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Document Type",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Business License\",\n    \"description\": \"Business License Document\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/document-types",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"document-types"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 02:31:59 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"Business License\",\n    \"description\": \"Business License Document\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{convexURL}}/1/1/documents",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"documents"
+							],
+							"query": [
+								{
+									"key": "document_type",
+									"value": "profile_pic",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "operator",
+									"value": "52",
+									"disabled": true
+								},
+								{
+									"key": "creation_date",
+									"value": "2023-10-24",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{convexURL}}/1/1/documents",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"documents"
+									],
+									"query": [
+										{
+											"key": "document_type",
+											"value": "profile_pic",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "operator",
+											"value": "52",
+											"disabled": true
+										},
+										{
+											"key": "creation_date",
+											"value": "2023-10-24",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 26 Dec 2023 06:48:52 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1200"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 3,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 2.49635769337764405059840346384824085482e+38,\n            \"title\": \"Business License\",\n            \"file_type\": \"image/png\",\n            \"document_type\": {\n                \"id\": 5,\n                \"name\": \"Business License\",\n                \"description\": \"Business License Document\"\n            },\n            \"file\": \"http://localhost:8000/media/files/bbce19af-9af6-48cc-8691-226896e52bea.png\",\n            \"description\": \"Just your normal everyday business document file\",\n            \"created_at\": \"2023-12-26T06:48:31.811317Z\"\n        },\n        {\n            \"id\": 2.35904299095549467854415338281934801805e+38,\n            \"title\": \"Business License\",\n            \"file_type\": \"image/png\",\n            \"document_type\": {\n                \"id\": 5,\n                \"name\": \"Business License\",\n                \"description\": \"Business License Document\"\n            },\n            \"file\": \"http://localhost:8000/media/files/b17983ee-e175-42e5-acf0-7f0a26d04b8d.png\",\n            \"description\": \"Just your normal everyday business document file\",\n            \"created_at\": \"2023-12-26T06:44:17.745500Z\"\n        },\n        {\n            \"id\": 2.46678881993669178728231742200718148236e+38,\n            \"title\": \"Business License\",\n            \"file_type\": \"image/png\",\n            \"document_type\": {\n                \"id\": 5,\n                \"name\": \"Business License\",\n                \"description\": \"Business License Document\"\n            },\n            \"file\": \"http://localhost:8000/media/files/b9949fe2-5ffb-4cc8-86d1-610675e5c28c.png\",\n            \"description\": \"Just your normal everyday business document file\",\n            \"created_at\": \"2023-12-26T06:26:34.401059Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Businesses",
+			"item": [
+				{
+					"name": "Payment Methods",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Convex Main Bank 1234\",\n    \"account_number\": \"10000123241234\",\n    \"bank_name\": \"Commercial Bank of Ethiopia\",\n    \"is_company_bank\": true\n}   ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/payment-methods",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"payment-methods"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Create",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\":\"Convex Main Bank 1234\",\n    \"account_number\": \"10000123241234\",\n    \"bank_name\": \"Commercial Bank of Ethiopia\",\n    \"is_company_bank\": true\n}   ",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/payment-methods",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"payment-methods"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 07:49:21 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "138"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 2,\n    \"name\": \"Convex Main Bank 1234\",\n    \"bank_name\": \"Commercial Bank of Ethiopia\",\n    \"account_number\": \"10000123241234\",\n    \"is_company_bank\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "Detail",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"method\":\"cheque\",\n    \"amount\":13000,\n    \"bank_id\":3,\n    \"receipt\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/payment-methods/1",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"payment-methods",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"method\":\"cheque\",\n    \"amount\":13000,\n    \"bank_id\":3,\n    \"receipt\":1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/payment-methods/1",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"payment-methods",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 07:48:40 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "138"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"name\": \"Convex Main Bank 1224\",\n    \"bank_name\": \"Commercial Bank of Ethiopia\",\n    \"account_number\": \"10000123241224\",\n    \"is_company_bank\": true\n}"
+								}
+							]
+						},
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"note\":\"This is the first note\",\n    \"invoice_id\":124124\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/payment-methods",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"payment-methods"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "List",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"note\":\"This is the first note\",\n    \"invoice_id\":124124\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{convexURL}}/1/1/payment-methods",
+											"host": [
+												"{{convexURL}}"
+											],
+											"path": [
+												"1",
+												"1",
+												"payment-methods"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Fri, 29 Dec 2023 07:44:01 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "WSGIServer/0.2 CPython/3.11.6"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept, origin"
+										},
+										{
+											"key": "Allow",
+											"value": "GET, POST, HEAD, OPTIONS"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "140"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "same-origin"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Convex Main Bank 1224\",\n        \"bank_name\": \"Commercial Bank of Ethiopia\",\n        \"account_number\": \"10000123241224\",\n        \"is_company_bank\": true\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"company 7\",\n    \"company_code\": \"CMP2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/businesses",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"businesses"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"company 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/businesses",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"businesses"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 02:37:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Business created successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{convexURL}}/1/businesses",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"businesses"
+							],
+							"query": [
+								{
+									"key": "document_type",
+									"value": "profile_pic",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "operator",
+									"value": "52",
+									"disabled": true
+								},
+								{
+									"key": "creation_date",
+									"value": "2023-10-24",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{convexURL}}/1/businesses",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"businesses"
+									],
+									"query": [
+										{
+											"key": "document_type",
+											"value": "profile_pic",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "operator",
+											"value": "52",
+											"disabled": true
+										},
+										{
+											"key": "creation_date",
+											"value": "2023-10-24",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:30:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 8,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 8,\n            \"name\": \"company 1\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Casino\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/products",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"company 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/businesses",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"businesses"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 02:37:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Business created successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{convexURL}}/1/1/products",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"products"
+							],
+							"query": [
+								{
+									"key": "document_type",
+									"value": "profile_pic",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "operator",
+									"value": "52",
+									"disabled": true
+								},
+								{
+									"key": "creation_date",
+									"value": "2023-10-24",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{convexURL}}/1/businesses",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"businesses"
+									],
+									"query": [
+										{
+											"key": "document_type",
+											"value": "profile_pic",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "operator",
+											"value": "52",
+											"disabled": true
+										},
+										{
+											"key": "creation_date",
+											"value": "2023-10-24",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:30:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 8,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 8,\n            \"name\": \"company 1\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":1,\n    \"customer\":1,\n    \"creation_date\":null,\n    \"bank\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/dashboard?customer_id=1&product_id=1",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"dashboard"
+							],
+							"query": [
+								{
+									"key": "customer_id",
+									"value": "1"
+								},
+								{
+									"key": "product_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"page\":1,\n    \"operator\":4,\n    \"creation_date\":null,\n    \"bank\":3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/dashboard",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"dashboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:30:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "649"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"pending_invoice_amount\": 2300,\n    \"pending_invoice_count\": 23,\n    \"completed_invoice_amount\": null,\n    \"completed_invoice_count\": 0,\n    \"payment_amount\": 360,\n    \"payment_count\": 30,\n    \"bank_pie_chart\": [],\n    \"customer_unpaid_invoice_pie_chart\": [\n        {\n            \"id\": 1,\n            \"company_name\": \"abc2\",\n            \"unpaid_percent\": 86.95652173913044\n        },\n        {\n            \"id\": 2,\n            \"company_name\": \"abc2\",\n            \"unpaid_percent\": 8.695652173913043\n        },\n        {\n            \"id\": 3,\n            \"company_name\": \"abc2\",\n            \"unpaid_percent\": 4.3478260869565215\n        }\n    ],\n    \"customer_invoice_pie_chart\": [\n        {\n            \"id\": 1,\n            \"company_name\": \"abc2\",\n            \"unpaid_percent\": 86.95652173913044\n        },\n        {\n            \"id\": 2,\n            \"company_name\": \"abc2\",\n            \"unpaid_percent\": 8.695652173913043\n        },\n        {\n            \"id\": 3,\n            \"company_name\": \"abc2\",\n            \"unpaid_percent\": 4.3478260869565215\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ActivityLog",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":1,\n    \"operator\":4,\n    \"creation_date\":null,\n    \"bank\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/activity-log",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"activity-log"
+							],
+							"query": [
+								{
+									"key": "item_type",
+									"value": "invoice",
+									"disabled": true
+								},
+								{
+									"key": "item_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "operator",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"page\":1,\n    \"operator\":4,\n    \"creation_date\":null,\n    \"bank\":3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/activity-log",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"activity-log"
+									],
+									"query": [
+										{
+											"key": "item_type",
+											"value": "invoice",
+											"disabled": true
+										},
+										{
+											"key": "item_id",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "operator",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 02:33:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "953"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 2,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 2,\n            \"org_admin\": {\n                \"id\": 1,\n                \"is_super_admin\": true,\n                \"phone_number\": \"+251947407163\",\n                \"full_name\": \"Tibebeselasie Mehari\"\n            },\n            \"customer\": null,\n            \"organization\": {\n                \"id\": 1,\n                \"name\": \"convex\"\n            },\n            \"business\": {\n                \"id\": 1,\n                \"name\": \"convex\"\n            },\n            \"created_at\": \"2023-12-21T02:28:10.836200Z\",\n            \"updated_at\": \"2023-12-21T02:28:10.836260Z\",\n            \"activity_name\": \"invoice_list\",\n            \"item_type\": null,\n            \"item_id\": null,\n            \"old_data\": null,\n            \"data\": {\n                \"page\": 1,\n                \"creation_date\": null,\n                \"due_date\": null,\n                \"last_paid_at\": null,\n                \"first_paid_at\": null\n            }\n        },\n        {\n            \"id\": 1,\n            \"org_admin\": {\n                \"id\": 1,\n                \"is_super_admin\": true,\n                \"phone_number\": \"+251947407163\",\n                \"full_name\": \"Tibebeselasie Mehari\"\n            },\n            \"customer\": null,\n            \"organization\": null,\n            \"business\": null,\n            \"created_at\": \"2023-12-21T02:18:07.042974Z\",\n            \"updated_at\": \"2023-12-21T02:18:07.043063Z\",\n            \"activity_name\": \"invoice_list\",\n            \"item_type\": null,\n            \"item_id\": null,\n            \"old_data\": null,\n            \"data\": {\n                \"page\": 1,\n                \"creation_date\": null,\n                \"due_date\": null,\n                \"last_paid_at\": null,\n                \"first_paid_at\": null\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"yonas\",\n    \"password\":\"Kyxkap-seggun-9seczi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/auth",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\":\"tibebe\",\n    \"password\":\"password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/auth",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 01:58:59 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "625"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMzIxMDMzOSwianRpIjoiN2MzNGVmOWZhMDgxNDkzNTliN2ZiYTI5OGFjODcyNWEiLCJ1c2VyX2lkIjoxfQ.AGyW-JrO1BL8q_7lg6tFyY01npLyq1uomZvzXarqnFI\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzMTQ1NTM5LCJqdGkiOiJkZWYxYWFjYmQ1OTY0OTBiYjk5MDBmZTM1ZTdjNTYwNSIsInVzZXJfaWQiOjF9.Mng3KrFh8-3_m21OEmfKgwqqQ8Hr2l8U8SV84LqACjI\",\n    \"user\": {\n        \"id\": 1,\n        \"username\": \"tibebe\",\n        \"email\": \"tibebe@gmail.com\"\n    },\n    \"org_admin\": {\n        \"is_super_admin\": true,\n        \"allowed_businesses\": [\n            {\n                \"id\": 1,\n                \"name\": \"convex\"\n            }\n        ],\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Refresh token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMzIxMDMzOSwianRpIjoiN2MzNGVmOWZhMDgxNDkzNTliN2ZiYTI5OGFjODcyNWEiLCJ1c2VyX2lkIjoxfQ.AGyW-JrO1BL8q_7lg6tFyY01npLyq1uomZvzXarqnFI\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/auth/refresh",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"auth",
+								"refresh"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Refresh token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMzIxMDMzOSwianRpIjoiN2MzNGVmOWZhMDgxNDkzNTliN2ZiYTI5OGFjODcyNWEiLCJ1c2VyX2lkIjoxfQ.AGyW-JrO1BL8q_7lg6tFyY01npLyq1uomZvzXarqnFI\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/auth/refresh",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"auth",
+										"refresh"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:31:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "218"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzMTY1NDc2LCJqdGkiOiI0NTZhZmNhZjFkN2Q0ZmYwOGM2ZDQyNGFmMzU0OWNlNCIsInVzZXJfaWQiOjF9.IiQADBiYuzjS2pQB0xXgMbYxsh5gcE0VnJYiKlT_XFc\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User role",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role\":\"activity_logs:view\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/admins/1/roles",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"admins",
+								"1",
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"role\":\"activity_logs:view\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/admins/1/roles",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"admins",
+										"1",
+										"roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:41:21 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Revoke",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role\":\"view_dashboard\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/users/1/roles",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"users",
+								"1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role\":\"create_payment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/admins/1/roles",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"admins",
+								"1",
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"role\":\"create_payment\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{convexURL}}/1/1/admins/1/roles",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"1",
+										"admins",
+										"1",
+										"roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:46:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"roles\": [\n        \"activity_logs:view\",\n        \"documents:view\",\n        \"payment:update\"\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{convexURL}}/1/notifications",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"notifications"
+							],
+							"query": [
+								{
+									"key": "document_type",
+									"value": "profile_pic",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "operator",
+									"value": "52",
+									"disabled": true
+								},
+								{
+									"key": "creation_date",
+									"value": "2023-10-24",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{convexURL}}/1/businesses",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"businesses"
+									],
+									"query": [
+										{
+											"key": "document_type",
+											"value": "profile_pic",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "operator",
+											"value": "52",
+											"disabled": true
+										},
+										{
+											"key": "creation_date",
+											"value": "2023-10-24",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:30:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 8,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 8,\n            \"name\": \"company 1\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{convexURL}}/1/1/settings",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"settings"
+							],
+							"query": [
+								{
+									"key": "document_type",
+									"value": "profile_pic",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "operator",
+									"value": "52",
+									"disabled": true
+								},
+								{
+									"key": "creation_date",
+									"value": "2023-10-24",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{convexURL}}/1/businesses",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"businesses"
+									],
+									"query": [
+										{
+											"key": "document_type",
+											"value": "profile_pic",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "operator",
+											"value": "52",
+											"disabled": true
+										},
+										{
+											"key": "creation_date",
+											"value": "2023-10-24",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:30:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 8,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 8,\n            \"name\": \"company 1\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{convexErpToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{convexURL}}/1/1/settings",
+							"host": [
+								"{{convexURL}}"
+							],
+							"path": [
+								"1",
+								"1",
+								"settings"
+							],
+							"query": [
+								{
+									"key": "document_type",
+									"value": "profile_pic",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "operator",
+									"value": "52",
+									"disabled": true
+								},
+								{
+									"key": "creation_date",
+									"value": "2023-10-24",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Token 20c6199f8bea2427820fe62e1e75230fcff18955",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{convexURL}}/1/businesses",
+									"host": [
+										"{{convexURL}}"
+									],
+									"path": [
+										"1",
+										"businesses"
+									],
+									"query": [
+										{
+											"key": "document_type",
+											"value": "profile_pic",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "3",
+											"disabled": true
+										},
+										{
+											"key": "operator",
+											"value": "52",
+											"disabled": true
+										},
+										{
+											"key": "creation_date",
+											"value": "2023-10-24",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 21 Dec 2023 07:30:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.11.6"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 8,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 8,\n            \"name\": \"company 1\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"tibebe\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"convex\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{convexErpToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "convexURL",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "convexErpToken",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

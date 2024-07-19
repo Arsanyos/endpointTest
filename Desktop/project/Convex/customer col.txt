@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "ef425cbe-6195-464f-98b3-342a911bf32b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36893557",
+		"_collection_link": "https://crm222-1133.postman.co/workspace/CRM-Workspace~b76897d8-917f-4f81-bec1-91f09a77a4c2/collection/36893557-ef425cbe-6195-464f-98b3-342a911bf32b?action=share&source=collection_link&creator=36893557"
+	},
+	"item": [
+		{
+			"name": "Get Customer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwOTY4OTA1LCJqdGkiOiJhZjFkNDI2MzViZDk0ODBiYTk1ZGM2MjIyODQ5YTM5MSIsInVzZXJfaWQiOjF9.GhyWvNVEEJ5YLKTKPyKtvJWbtwbBARWZ4QClItZa18A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/customer/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/customer/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 14 Jul 2024 09:01:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "598"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"company_name\": \"fdsafdas\",\n    \"license_issue_date\": \"2023-04-05T12:34:56Z\",\n    \"license_expiry_date\": \"2025-04-05T12:00:00Z\",\n    \"contact\": [\n        {\n            \"full_name\": \"Abebe Contact\",\n            \"contact_phone\": \"+25921444455\",\n            \"email\": \"Abebecontact@gmail.com\",\n            \"contact_type\": \"OWNER\",\n            \"description\": \"Secondary Contact\"\n        },\n        {\n            \"full_name\": \"Kebede Contact\",\n            \"contact_phone\": \"+258963214401\",\n            \"email\": \"Kebedecontact@gmail.com\",\n            \"contact_type\": \"OWNER\",\n            \"description\": \"Primary Contact\"\n        }\n    ],\n    \"address\": 16,\n    \"image\": null,\n    \"phone_number\": \"+251921454501\",\n    \"email\": \"Abebecontact@gmail.com\",\n    \"note\": \"This is a note\",\n    \"customer_type\": \"INDIVIDUAL\",\n    \"is_active\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Customer",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIwOTU0NTMzLCJqdGkiOiI3YzBjYWNiYWI0MmI0ZWE2ODA5NDdkYmE2MGQ2MDk4YiIsInVzZXJfaWQiOjF9.5rXRP1GGpoeDx9wtOEas7UnVvPSbsyjbfx4Aw2q2V7k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "company_name",
+							"value": "fdsafdas",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"contentType": "multipart/form-data",
+							"type": "file",
+							"src": [
+								"postman-cloud:///1ef4056f-fda8-41d0-a4cc-4269cd2bc641",
+								"/C:/Users/Administrator/Pictures/detail report revenue report revenue report.PNG"
+							]
+						},
+						{
+							"key": "license_issue_date",
+							"value": "2023-04-05 12:34:56",
+							"type": "text"
+						},
+						{
+							"key": "license_expiry_date",
+							"value": "2025-04-05 12:00:00",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "+251921454501",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "This is a note",
+							"type": "text"
+						},
+						{
+							"key": "customer_type",
+							"value": "INDIVIDUAL",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "ET",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "Example Region1",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Example City1",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "123 Example St1",
+							"type": "text"
+						},
+						{
+							"key": "full_name",
+							"value": "Kebede Contact",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Primary Contact",
+							"type": "text"
+						},
+						{
+							"key": "contact_type",
+							"value": "OWNER",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Kebedecontact@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "contact_phone",
+							"value": "+258963214401",
+							"type": "text"
+						},
+						{
+							"key": "full_name",
+							"value": "Abebe Contact",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Secondary Contact",
+							"type": "text"
+						},
+						{
+							"key": "contact_type",
+							"value": "OWNER",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Abebecontact@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "contact_phone",
+							"value": "+25921444455",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-customer/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-customer",
+						"1"
+					],
+					"query": [
+						{
+							"key": "company_name",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_name",
+									"value": "fdsafdas",
+									"contentType": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"contentType": "multipart/form-data",
+									"type": "file",
+									"src": [
+										"postman-cloud:///1ef4056f-fda8-41d0-a4cc-4269cd2bc641",
+										"/C:/Users/Administrator/Pictures/detail report revenue report revenue report.PNG"
+									]
+								},
+								{
+									"key": "license_issue_date",
+									"value": "2023-04-05 12:34:56",
+									"type": "text"
+								},
+								{
+									"key": "license_expiry_date",
+									"value": "2025-04-05 12:00:00",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "+251921454111",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "This is a note",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "customer_type",
+									"value": "INDIVIDUAL",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "ET",
+									"type": "text"
+								},
+								{
+									"key": "region",
+									"value": "Example Region1",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Example City1",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "123 Example St1",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Kebede",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "this is last",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Primary Contact",
+									"type": "text"
+								},
+								{
+									"key": "contact_type",
+									"value": "OWNER",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Kebedecontact@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "contact_phone",
+									"value": "+258963214401",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Abebe",
+									"type": "text"
+								},
+								{
+									"key": "last_name\n",
+									"value": "solomon",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Secondary Contact",
+									"type": "text"
+								},
+								{
+									"key": "contact_type",
+									"value": "OWNER",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Abebecontact@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "contact_phone",
+									"value": "+25921444455",
+									"type": "text"
+								},
+								{
+									"key": "document_type",
+									"value": "business_license",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "postman-cloud:///1ef4056f-fda8-41d0-a4cc-4269cd2bc641"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/create-customer/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"create-customer",
+								"1"
+							],
+							"query": [
+								{
+									"key": "company_name",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jul 2024 09:44:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "711"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9,\n    \"company_name\": \"fdsafdas\",\n    \"license_issue_date\": \"2023-04-05T12:34:56Z\",\n    \"license_expiry_date\": \"2025-04-05T12:00:00Z\",\n    \"contact\": [\n        {\n            \"first_name\": \"Abebe\",\n            \"last_name\": \"solomon\",\n            \"contact_phone\": \"+25921444455\",\n            \"email\": \"Abebecontact@gmail.com\",\n            \"contact_type\": \"OWNER\",\n            \"description\": \"Secondary Contact\"\n        },\n        {\n            \"first_name\": \"Kebede\",\n            \"last_name\": \"this is last\",\n            \"contact_phone\": \"+258963214401\",\n            \"email\": \"Kebedecontact@gmail.com\",\n            \"contact_type\": \"OWNER\",\n            \"description\": \"Primary Contact\"\n        }\n    ],\n    \"address\": 30,\n    \"image\": \"http://127.0.0.1:8000/media/customer_profile/detail_report_revenue_report_revenue_report.PNG\",\n    \"phone_number\": \"+251921454111\",\n    \"email\": \"Abebecontact@gmail.com\",\n    \"note\": null,\n    \"customer_type\": \"INDIVIDUAL\",\n    \"is_active\": true\n}"
+				}
+			]
+		}
+	]
+}
