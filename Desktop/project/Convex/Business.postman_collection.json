@@ -1,0 +1,630 @@
+{
+	"info": {
+		"_postman_id": "7dc3c8d5-8603-44cc-8746-2bdaa7a233fe",
+		"name": "Business",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36893557",
+		"_collection_link": "https://crm222-1133.postman.co/workspace/CRM-Workspace~b76897d8-917f-4f81-bec1-91f09a77a4c2/collection/36893557-7dc3c8d5-8603-44cc-8746-2bdaa7a233fe?action=share&source=collection_link&creator=36893557"
+	},
+	"item": [
+		{
+			"name": "Get business",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMTMxNTU0LCJqdGkiOiIyNDcxNmZiMzgxYTU0MzJjYTZmZDczZGQwYjMzMTBiYiIsInVzZXJfaWQiOjF9.QxLI0qwYH4Xxy73rzZKzVy1VLcYYbWi2hJbt-UWvD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/business/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"business",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/business/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/business/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"business",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 18 Jul 2024 18:32:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"new name1\",\n    \"organization\": {\n        \"id\": 1,\n        \"name\": \"Org\"\n    },\n    \"description\": \"ccode\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update business",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMTMxNTU0LCJqdGkiOiIyNDcxNmZiMzgxYTU0MzJjYTZmZDczZGQwYjMzMTBiYiIsInVzZXJfaWQiOjF9.QxLI0qwYH4Xxy73rzZKzVy1VLcYYbWi2hJbt-UWvD48",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "new name1",
+							"type": "text"
+						},
+						{
+							"key": "company_code",
+							"value": "ccode",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "USD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update-business/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-business",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/update-business/1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "new name1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "ccode",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef4056f-fda8-41d0-a4cc-4269cd2bc641"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/update-business/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"update-business",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 18 Jul 2024 18:19:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"new name1\",\n    \"organization\": {\n        \"id\": 1,\n        \"name\": \"Org\"\n    },\n    \"description\": \"ccode\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create business",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzQ2ODM1LCJqdGkiOiI5YjQ4NTYzNjE3NGE0M2M3OWRjZDJlOGZkY2I4ZGQwNyIsInVzZXJfaWQiOjF9.wc2VFflhdmfoYyOhcb2-2RAYb5KLuK3zTT-yAEVysvU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "business2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "some descs",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef4056f-fda8-41d0-a4cc-4269cd2bc641"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-business/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-business",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/create-business/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "business3",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "some descsfdas",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef4056f-fda8-41d0-a4cc-4269cd2bc641"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/create-business/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"create-business",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 21 Jul 2024 17:24:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "97"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"business3\",\n    \"organization\": {\n        \"id\": 1,\n        \"name\": \"Organization\"\n    },\n    \"description\": \"some descsfdas\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/deactivate-business/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzQ2ODM1LCJqdGkiOiI5YjQ4NTYzNjE3NGE0M2M3OWRjZDJlOGZkY2I4ZGQwNyIsInVzZXJfaWQiOjF9.wc2VFflhdmfoYyOhcb2-2RAYb5KLuK3zTT-yAEVysvU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deactivate-business/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deactivate-business",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/deactivate-business/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deactivate-business/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deactivate-business",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 18 Jul 2024 18:42:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Business Deactivated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List businesses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxNTk5ODYzLCJqdGkiOiI2MmNlOTQ1ZGM4ODI0NDlhOWRjNjI5MzEyMzliNzg5NSIsInVzZXJfaWQiOjF9.K5kcowyrZVI6rf2duq7X_lKhOlGe8ez3EKZscY6r0eE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/businesses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"businesses",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List businesses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/businesses/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"businesses",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 21 Jul 2024 19:45:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 2,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Bus\",\n            \"organization\": {\n                \"id\": 1,\n                \"name\": \"Organization\"\n            },\n            \"description\": \"fda\"\n        },\n        {\n            \"name\": \"business3\",\n            \"organization\": {\n                \"id\": 1,\n                \"name\": \"Organization\"\n            },\n            \"description\": \"some descsfdas\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "List businesses with query params",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxNTk5ODYzLCJqdGkiOiI2MmNlOTQ1ZGM4ODI0NDlhOWRjNjI5MzEyMzliNzg5NSIsInVzZXJfaWQiOjF9.K5kcowyrZVI6rf2duq7X_lKhOlGe8ez3EKZscY6r0eE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/businesses/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"businesses",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,515 @@
+{
+	"info": {
+		"_postman_id": "84de6f87-1052-4401-bebb-babda7221851",
+		"name": "Payment Method",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36893557",
+		"_collection_link": "https://crm222-1133.postman.co/workspace/CRM-Workspace~b76897d8-917f-4f81-bec1-91f09a77a4c2/collection/36893557-84de6f87-1052-4401-bebb-babda7221851?action=share&source=collection_link&creator=36893557"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/create-payment-method/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzkwMDk0LCJqdGkiOiJhZmVjZWNkZDc5MWI0NWJlYmM2MGZjMzBmYjc5YzlmZiIsInVzZXJfaWQiOjF9.FUijeJHwJTXMJ3C4pPzY04osETxU7_LO3Sl6jWYtThg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "account_name",
+							"value": "Abyssinia",
+							"type": "text"
+						},
+						{
+							"key": "account_number",
+							"value": "1000222333777",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "Bank",
+							"type": "text"
+						},
+						{
+							"key": "account_type",
+							"value": "individual",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-payment-method/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-payment-method",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/create-payment-method/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account_name",
+									"value": "Abyssinia",
+									"type": "text"
+								},
+								{
+									"key": "account_number",
+									"value": "1000222333777",
+									"type": "text"
+								},
+								{
+									"key": "method",
+									"value": "Bank",
+									"type": "text"
+								},
+								{
+									"key": "account_type",
+									"value": "individual",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/create-payment-method/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"create-payment-method",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Jul 2024 06:15:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_name\": \"Abyssinia\",\n    \"account_number\": \"1000222333777\",\n    \"method\": \"Bank\",\n    \"account_type\": \"individual\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/payment-method/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzkwMDk0LCJqdGkiOiJhZmVjZWNkZDc5MWI0NWJlYmM2MGZjMzBmYjc5YzlmZiIsInVzZXJfaWQiOjF9.FUijeJHwJTXMJ3C4pPzY04osETxU7_LO3Sl6jWYtThg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/payment-method/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"payment-method",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/payment-method/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/payment-method/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"payment-method",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Jul 2024 06:18:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "190"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"business\": {\n        \"name\": \"new name1\",\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"Org\"\n        },\n        \"description\": \"ccode\"\n    },\n    \"account_name\": \"CBE\",\n    \"account_number\": \"1000222333666\",\n    \"method\": \"Bank\",\n    \"account_type\": \"individual\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/deactivate-payment-method/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzkwMDk0LCJqdGkiOiJhZmVjZWNkZDc5MWI0NWJlYmM2MGZjMzBmYjc5YzlmZiIsInVzZXJfaWQiOjF9.FUijeJHwJTXMJ3C4pPzY04osETxU7_LO3Sl6jWYtThg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deactivate-payment-method/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deactivate-payment-method",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/deactivate-payment-method/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/deactivate-payment-method/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"deactivate-payment-method",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Jul 2024 06:37:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "53"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Payment method deactivated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/update-payment-method/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIxMzkwMDk0LCJqdGkiOiJhZmVjZWNkZDc5MWI0NWJlYmM2MGZjMzBmYjc5YzlmZiIsInVzZXJfaWQiOjF9.FUijeJHwJTXMJ3C4pPzY04osETxU7_LO3Sl6jWYtThg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "account_name",
+							"value": "Abyssiniya bank",
+							"type": "text"
+						},
+						{
+							"key": "account_number",
+							"value": "1000855666",
+							"type": "text"
+						},
+						{
+							"key": "method",
+							"value": "Bank",
+							"type": "text"
+						},
+						{
+							"key": "account_type",
+							"value": "company",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update-payment-method/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-payment-method",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/update-payment-method/1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account_name",
+									"value": "Abyssiniya bank",
+									"type": "text"
+								},
+								{
+									"key": "account_number",
+									"value": "1000855666",
+									"type": "text"
+								},
+								{
+									"key": "method",
+									"value": "Bank",
+									"type": "text"
+								},
+								{
+									"key": "account_type",
+									"value": "company",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/update-payment-method/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"update-payment-method",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 19 Jul 2024 06:46:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "196"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"business\": {\n        \"name\": \"new name1\",\n        \"organization\": {\n            \"id\": 1,\n            \"name\": \"Org\"\n        },\n        \"description\": \"ccode\"\n    },\n    \"account_name\": \"Abyssiniya bank\",\n    \"account_number\": \"1000855666\",\n    \"method\": \"Bank\",\n    \"account_type\": \"company\"\n}"
+				}
+			]
+		}
+	]
+}

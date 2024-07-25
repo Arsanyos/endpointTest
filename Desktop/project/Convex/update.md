@@ -34,9 +34,9 @@ cusId , prodId
 product (string)
 customer (string)
 
-amount (number)
+<!-- amount (number)
 paid_amount (number)
 status (fully_paid, partially_paid, pending, cancelled) (string)
 currency (string)
 due_date (date)
-note (string) --- optional
+note (string) --- optional -->
