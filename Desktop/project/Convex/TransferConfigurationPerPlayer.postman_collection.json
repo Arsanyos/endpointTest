@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "eb4503db-ceac-4234-8ce8-7ceffaef4dff",
+		"name": "TransferConfigurationPerPlayer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29683787"
+	},
+	"item": [
+		{
+			"name": "otp-generate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 6a3eb9ea87820f753a3a3f1fc5cd519625b7bf92",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"payment_type\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}:8000/payment-otp/generate/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"port": "8000",
+					"path": [
+						"payment-otp",
+						"generate",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallet-transfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 6a3eb9ea87820f753a3a3f1fc5cd519625b7bf92",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"reciever\": \"+251912775097\",\n    \"amount\": \"50\",\n    \"otp\": \"\",\n    \"otp_unique_id\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}:8000/transfer/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"port": "8000",
+					"path": [
+						"transfer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "member-transaction-setting",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 6a3eb9ea87820f753a3a3f1fc5cd519625b7bf92",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}:8000/client/client-member-update-transaction-setting/1/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"client-member-update-transaction-setting",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-member-transaction-setting",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 6a3eb9ea87820f753a3a3f1fc5cd519625b7bf92",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"wallet_transfer_setting\": 1,\n    \"max_daily_wallet_received_number\": 1000,\n    \"max_daily_wallet_sent_number\": 0,\n    \"max_daily_wallet_received_amount\": 0.0,\n    \"max_daily_wallet_sent_amount\": 0.0,\n    \"deposit_transaction_setting\": 1,\n    \"max_daily_deposit_number\": 0,\n    \"max_daily_deposit_amount\": 0.0,\n    \"withdraw_transaction_setting\": 1,\n    \"max_daily_withdraw_number\": 0,\n    \"max_daily_withdraw_amount\": 0.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}:8000/client/client-member-update-transaction-setting/1/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"client-member-update-transaction-setting",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost"
+		}
+	]
+}
